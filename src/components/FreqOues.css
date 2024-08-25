@@ -1,0 +1,49 @@
+.freq__container,
+.freq__box__out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.freq__container > h1{
+    margin: 32px 0;
+    font-size: 32px;
+}
+
+.freq__box__out{
+    margin: 3px !important;
+}
+
+.freq__box{
+    width: 70vw;
+    height: 100px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    font-size: 24px;
+    color: #fff;
+    margin: 3px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.freq__box:hover{
+    background: #636363;
+}
+
+.freq__box > span{
+    font-size: 32px;
+}
+
+.freq__context{
+    width: 70vw;
+    height: 300px;
+    background: #333;
+    color: #fff;
+    font-size: 24px;
+    padding: 32px;
+}

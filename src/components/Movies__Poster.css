@@ -1,0 +1,79 @@
+@media screen and (max-width: 1803px) {
+    .container{
+        width: 100%;
+        background: #000;
+    }
+    
+    .poster__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .poster-1__container{
+        display: flex;
+        width: 70%;
+    }
+    
+    .bg__poster{
+        height: 350px !important;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    
+    .bg__poster:hover{
+        height: 380px !important;
+    }
+    
+    .arrow{
+        font-size: 128px;
+        cursor: pointer;
+        color: #fff;
+        transition: all .3s ease-in;
+    }
+    
+    .arrow:hover{
+        color: #333;
+    }
+}
+
+
+@media screen and (min-width: 1804px) {
+    .container{
+        width: 100%;
+        background: #000;
+    }
+    
+    .poster__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .poster-1__container{
+        display: flex;
+        width: 70%;
+    }
+    
+    .bg__poster{
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    
+    .bg__poster:hover{
+        height: 580px !important;
+    }
+    
+    .arrow{
+        font-size: 128px;
+        cursor: pointer;
+        color: #fff;
+        transition: all .3s ease-in;
+    }
+    
+    .arrow:hover{
+        color: #333;
+    }
+}

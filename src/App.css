@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --color__white: #fff;
+  --color__dark__white: #a1a1a1;
+  --color__red: #E50914;
+  --color__dark__red: #B20710;
+  --size__s: 8px;
+  --size__m: 16px;
+  --size__l: 24px;
+  --size__xl: 32px;
+  --size__xxl: 64px;
+  --size__xxxl: 128px;
+  --size__xxxxl: 256px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1803px) 
+{
+  .header__container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('https://assets.nflxext.com/ffe/siteui/vlv3/36a4db5b-dec2-458a-a1c0-662fa60e7473/bd33fda9-3bf8-49eb-af4d-2f2ab7281524/TH-en-20240820-TRIFECTA-perspective_WEB_839fcc25-4fe2-4cd9-9aa1-1674e9d2a91c_large.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .nav__container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav__container > img:nth-child(1){
+    width: var(--size__xxxxl);
+    margin: var(--size__xl);
+  }
+
+  .right__menu{
+    margin-top: 36px;
+  }
+
+  .right__menu > select,
+  .right__menu > button{
+    padding: var(--size__m);
+    color: var(--color__white);
+    margin-right: var(--size__m);
+    border-radius: var(--size__s);
+    font-size: var(--size__m);
+  }
+
+  .right__menu > select{
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .right__menu > button{
+    width: 120px;
+    border: none;
+    background: var(--color__red);
+  }
+
+  .header__section__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__section__box{
+    color: var(--color__white);
+    margin-top: -120px;
+    width: 50%;
+  }
+
+  .header__section__box > h1{
+    font-size: var(--size__xl);
+    font-weight: bolder;
+  }
+
+  .header__section__box > p{
+    font-size: var(--size__l);
+  }
+
+  .header__section__box > p:nth-child(3), 
+  .header__section__box > input,
+  .header__section__box > h1{
+    margin: var(--size__m);
+  }
+
+  .header__section__box > input,
+  .header__section__box > button{
+    padding: var(--size__m);
+  }
+
+  .header__section__box > input{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color__white);
+    border-radius: var(--size__s);
+    font-size: 22px;
+    color: var(--color__white);
+  }
+
+  .header__section__box > button{
+    width: 37%;
+    background: var(--color__red);
+    border: none;
+    border-radius: var(--size__s);
+    color: var(--color__white);
+    font-size: var(--size__l);
+    font-weight: bold;
+    margin-left: var(--size__s);
+  }
+
+  .header__section__box > button,
+  .right__menu > button{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+
+  .header__section__box > button:hover,
+  .right__menu > button:hover{
+    background: var(--color__dark__red);
+  }
+
+  .section-1__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color__white);
+    margin: var(--size__xl) var(--size__l);
+  }
+
+  .section-1__container > h1{
+    font-size: var(--size__xl);
+  }
+
+  .section-1__container > .select__container > select{
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color__white);
+    margin: var(--size__s);
+    padding: var(--size__m);
+    border-radius: var(--size__s);
+    font-size: var(--size__m);
+  }
+
+  .section-2__container{
+    width: 100%;
+  }
+
+  .footer__container{
+    width: 100%;
+    height: 720px;
+    padding: var(--size__m) var(--size__xxl);
+  }
+
+  .footer__container > h1{
+    font-size: 18px;
+    color: var(--color__white);
+    font-weight: 500;
+  }
+
+  .footer__input__btn > input,
+  .footer__input__btn > button{
+    padding: var(--size__m);
+    font-size: var(--size__l);
+    border: none;
+    border-radius: var(--size__s);
+    color: var(--color__white);
+  }
+
+  .footer__input__btn > input{
+    background: rgba(0, 0, 0, 0.3);
+    border: solid 1px var(--color__white);
+    margin: var(--size__m) var(--size__l);
+    width: 60%;
+  }
+
+  .footer__input__btn > button{
+    width: 25%;
+    background: var(--color__red);
+    border: none;
+    font-weight: bolder;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-left: var(--size__m);
+  }
+
+  .footer__input__btn > button:hover{
+    background: var(--color__dark__red);
+  }
+
+  .footer__box > p{
+    font-size: var(--size__m);
+    color: var(--color__dark__white);
+    margin: var(--size__l);
+  }
+
+  .footer__box__in{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin: var(--size__l);
+    justify-content: space-between;
+  }
+
+  .footer__box__inner > a{
+    font-size: var(--size__m);
+    color: var(--color__dark__white);
+  }
+
+  .select__container > select{
+    width: 150px;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color__white);
+    padding: var(--size__m);
+    margin: var(--size__l);
+    border-radius: var(--size__s);
+  }
+
+  .footer__container > h3{
+    color: var(--color__white);
+    margin: var(--size__l);
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 1804px) 
+{
+  .header__container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('https://assets.nflxext.com/ffe/siteui/vlv3/36a4db5b-dec2-458a-a1c0-662fa60e7473/bd33fda9-3bf8-49eb-af4d-2f2ab7281524/TH-en-20240820-TRIFECTA-perspective_WEB_839fcc25-4fe2-4cd9-9aa1-1674e9d2a91c_large.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .nav__container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav__container > img:nth-child(1){
+    width: var(--size__xxxxl);
+    margin: var(--size__l);
+  }
+
+  .right__menu{
+    margin-top: 36px;
+  }
+
+  .right__menu > select,
+  .right__menu > button{
+    padding: var(--size__m);
+    color: var(--color__white);
+    margin-right: var(--size__m);
+    border-radius: var(--size__s);
+    font-size: var(--size__l);
+  }
+
+  .right__menu > select{
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .right__menu > button{
+    width: 120px;
+    border: none;
+    background: var(--color__red);
+  }
+
+
+  .header__section__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__section__box{
+    color: var(--color__white);
+    margin-top: -64px;
+    width: 50%;
+  }
+
+  .header__section__box > h1{
+    font-size: var(--size__xxl);
+    font-weight: bolder;
+  }
+
+  .header__section__box > p{
+    font-size: var(--size__l);
+  }
+
+  .header__section__box > p:nth-child(3), 
+  .header__section__box > input,
+  .header__section__box > h1{
+    margin: var(--size__m);
+  }
+
+  .header__section__box > input,
+  .header__section__box > button{
+    padding: var(--size__m);
+  }
+
+  .header__section__box > input{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color__white);
+    border-radius: var(--size__s);
+    font-size: 22px;
+    color: var(--color__white);
+  }
+
+  .header__section__box > button{
+    width: 30%;
+    background: var(--color__red);
+    border: none;
+    border-radius: var(--size__s);
+    color: var(--color__white);
+    font-size: var(--size__l);
+    font-weight: bold;
+    margin-left: var(--size__s);
+  }
+
+  .header__section__box > button,
+  .right__menu > button{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+
+  .header__section__box > button:hover,
+  .right__menu > button:hover{
+    background: var(--color__dark__red);
+  }
+
+  .section-1__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color__white);
+    margin: var(--size__xl) var(--size__l);
+  }
+
+  .section-1__container > h1{
+    font-size: var(--size__xl);
+  }
+
+  .section-1__container > .select__container > select{
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color__white);
+    margin: var(--size__s);
+    padding: var(--size__m);
+    border-radius: var(--size__s);
+    font-size: var(--size__m);
+  }
+
+  .section-2__container{
+    width: 100%;
+  }
+
+  .footer__container{
+    width: 100%;
+    height: 700px;
+    padding: var(--size__m) var(--size__xxxxl);
+  }
+
+  .footer__container > h1{
+    font-size: 18px;
+    color: var(--color__white);
+    font-weight: 500;
+  }
+
+  .footer__input__btn > input,
+  .footer__input__btn > button{
+    padding: var(--size__m);
+    font-size: var(--size__l);
+    border: none;
+    border-radius: var(--size__s);
+    color: var(--color__white);
+  }
+
+  .footer__input__btn > input{
+    background: rgba(0, 0, 0, 0.3);
+    border: solid 1px var(--color__white);
+    margin: var(--size__m) var(--size__l);
+    width: 60%;
+  }
+
+  .footer__input__btn > button{
+    width: 25%;
+    background: var(--color__red);
+    border: none;
+    font-weight: bolder;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-left: var(--size__m);
+  }
+
+  .footer__input__btn > button:hover{
+    background: var(--color__dark__red);
+  }
+
+  .footer__box > p{
+    font-size: var(--size__m);
+    color: var(--color__dark__white);
+    margin: var(--size__l);
+  }
+
+  .footer__box__in{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin: var(--size__l);
+    justify-content: space-between;
+  }
+
+  .footer__box__inner > a{
+    font-size: var(--size__m);
+    color: var(--color__dark__white);
+  }
+
+  .select__container > select{
+    width: 150px;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color__white);
+    padding: var(--size__m);
+    margin: var(--size__l);
+    border-radius: var(--size__s);
+  }
+
+  .footer__container > h3{
+    color: var(--color__white);
+    margin: var(--size__l);
+    font-weight: 300;
+  }
+}
